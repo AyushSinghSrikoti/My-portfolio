@@ -1,0 +1,51 @@
+.footer-container{
+    /* background-color: orangered; */
+    height: 30vh;
+    width: 80%;
+    margin-top: 15vh;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.upper-f{
+    height: 50%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.lower-f{
+    height: 50%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5vh;
+}
+
+.contact-icons{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    width: 4vh;
+    cursor: pointer;
+    /* transition: border 1s ease-in-out; */
+}
+
+.contact-icons:hover{
+    border: 2px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

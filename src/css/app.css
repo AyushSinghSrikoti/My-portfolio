@@ -1,0 +1,26 @@
+/* .custom-cursor{
+    cursor: url('../cursor.png'), auto;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    cursor: none;
+}
+
+.cursor{
+    background: url('../../WhatsApp_Image_2024-01-26_at_1.31.40_AM-removebg-preview.png');
+    height: 10vh;
+    width: 10vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+}

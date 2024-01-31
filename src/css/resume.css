@@ -1,0 +1,27 @@
+.resume-container {
+    color: #fff; /* Set text color to white */
+    padding: 20px; /* Add padding for better spacing */
+    max-width: 800px; /* Set a maximum width for content */
+    margin: auto; /* Center the content horizontally */
+    text-align: justify; /* Justify text for better readability */
+}
+
+/* Additional styling for specific elements if needed */
+.resume-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.resume-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.resume-download-link {
+    display: block;
+    color: #3498db; /* Set a color for the link */
+    text-decoration: none;
+    margin-top: 10px;
+}

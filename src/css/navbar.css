@@ -1,0 +1,45 @@
+.navbar-container{
+    background: rgb(57, 57, 57);
+    height: 3.7vh;
+    width: 80%;
+    position: sticky;
+    left: 10%;
+    top: 2%;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh;
+    font-size: larger;
+    color: rgb(188, 188, 188);
+    z-index: 10;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 3vh;
+}
+
+.home{
+    font-size: larger;
+}
+
+.day{
+    font-size: 5vh;
+}
+
+.link-style{
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-style:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.mode-toggle:hover{
+    color: white;
+    cursor: pointer;
+}

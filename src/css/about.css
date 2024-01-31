@@ -1,0 +1,19 @@
+.about-container {
+    color: #fff;
+    padding:  2.87vh; 
+    max-width: 115.1vh; 
+    margin: auto; 
+    text-align: justify;
+}
+
+.about-title {
+    font-size: 4.02;
+    font-weight: bold;
+    margin-bottom: 2.15vh;
+}
+
+.about-content {
+    font-size: 2.58vh;
+    line-height: 1.6;
+    margin-bottom: 2.87vh;
+}

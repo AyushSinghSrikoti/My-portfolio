@@ -1,0 +1,17 @@
+.projects-container{
+    /* background: red; */
+    height: 150vh;
+    width: 80%;
+    margin-top: 5vh;
+    margin-left: 10%;
+    display: flex;
+    gap: 7vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.common-heading{
+    margin-top: 5vh;
+    margin-left: 10%;
+}
