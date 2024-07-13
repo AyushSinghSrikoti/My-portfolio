@@ -1,6 +1,5 @@
 .home-container {
-  /* background: red; */
-  height: 180vh;
+  height: auto;
   width: 80%;
   margin-top: 5vh;
   margin-left: 10%;
@@ -9,12 +8,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10vh; /* Add a gap of 10vh between child elements */
+  gap: 10vh;
 }
 
 .wrapper {
   color: white;
-  /* background-color: aqua; */
   width: 50%;
   height: 28.77vh;
   display: flex;
@@ -27,11 +25,10 @@
 }
 
 .wrapper:hover {
-  background-color: #333; /* Change the background color on hover */
+  background-color: #333;
 }
 
 .words {
-  /* background-color: purple; */
   display: flex;
   flex-direction: column;
   height: 40%;
@@ -43,35 +40,23 @@
 }
 
 @keyframes spin_words {
-  0% {
-    transform: translateY(0%);
-  }
-  25% {
-    transform: translateY(-100%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  75% {
-    transform: translateY(-300%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
+  0% { transform: translateY(0%); }
+  25% { transform: translateY(-100%); }
+  50% { transform: translateY(-200%); }
+  75% { transform: translateY(-300%); }
+  100% { transform: translateY(0%); }
 }
 
 .bout-meh {
   color: white;
-  /* background-color: brown; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 5vh;
-  height: 30vh;
+  height: auto;
   width: 100%;
-  /* margin-top: -10vh; */
 }
 
 .bout-meh-button {
@@ -93,17 +78,16 @@
   border: 2px solid black;
 }
 
-.link-style2{
+.link-style2 {
   text-decoration: none;
   color: white;
 }
 
-.link-style2:hover{
+.link-style2:hover {
   color: black;
 }
 
 .project-lab {
-  /* background-color: green; */
   display: flex;
   gap: 7vh;
   flex-wrap: wrap;
@@ -112,11 +96,49 @@
   color: white;
 }
 
-.home-heading-p{
+.home-heading-p {
   color: white;
-  /* margin-bottom: -20vh; */
   margin-top: 5vh;
   display: flex;
   align-items: center;
   gap: 2vh;
+}
+
+/* Media query for iPhone 15 Pro */
+@media screen and (max-width: 430px) {
+  .home-container {
+    width: 90%;
+    margin-left: 5%;
+    gap: 5vh;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: auto;
+    font-size: 6vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bout-meh {
+    font-size: 3vh;
+  }
+
+  .bout-meh-button {
+    width: 40vw;
+    height: 6vh;
+    font-size: 2.5vh;
+  }
+
+  .home-heading-p {
+    font-size: 4vh;
+  }
+
+  .home-heading-p svg {
+    font-size: 4vh !important;
+  }
+
+  .project-lab {
+    gap: 5vh;
+  }
 }

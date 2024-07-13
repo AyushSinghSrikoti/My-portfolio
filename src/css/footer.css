@@ -1,5 +1,4 @@
-.footer-container{
-    /* background-color: orangered; */
+.footer-container {
     height: 30vh;
     width: 80%;
     margin-top: 15vh;
@@ -9,43 +8,65 @@
     flex-wrap: wrap;
 }
 
-.upper-f{
+.upper-f {
     height: 50%;
     width: 100%;
-    /* background-color: aqua; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 5vh;
+    text-align: center;
 }
 
-.lower-f{
+.lower-f {
     height: 50%;
     width: 100%;
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: top;
     gap: 5vh;
 }
 
-.contact-icons{
-    /* background-color: red; */
+.contact-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 4vh;
     width: 4vh;
     cursor: pointer;
-    /* transition: border 1s ease-in-out; */
 }
 
-.contact-icons:hover{
+.contact-icons:hover {
     border: 2px solid white;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
+}
+
+/* Media query for iPhone 15 Pro */
+@media screen and (max-width: 430px) {
+    .footer-container {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        margin-top: 10vh;
+    }
+
+    .upper-f {
+        font-size: 3vh;
+        padding: 2vh 0;
+    }
+
+    .lower-f {
+        gap: 3vh;
+        padding-bottom: 2vh;
+    }
+
+    .contact-icons {
+        height: 3vh;
+        width: 3vh;
+    }
 }

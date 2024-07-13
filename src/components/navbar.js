@@ -1,11 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { TiHomeOutline } from "react-icons/ti";
-import { WiDaySunny } from "react-icons/wi";
 import { Link, Outlet } from "react-router-dom";
 import "../css/navbar.css";
 
 export default function Navbar() {
   const [navStatus, setNavStatus] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 430);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -23,10 +34,10 @@ export default function Navbar() {
     <>
       <div className="navbar-container">
         <div className="left-side">
-          {navStatus ? (
+          {navStatus || isMobile ? (
             <Link to="/" className="link-style" onClick={() => handleLinkClick(false)}>
               <TiHomeOutline className="home" />
-              <span style={{ fontSize: "3.8vh", marginLeft: "1vh" }}>Ayush</span>
+              <span style={{ fontSize: isMobile ? "2.8vh" : "3.8vh", marginLeft: isMobile ? "0.5vh" : "1vh" }}>Ayush</span>
             </Link>
           ) : (
             <Link to="/" className="link-style" onClick={() => handleLinkClick(false)}>
@@ -41,15 +52,11 @@ export default function Navbar() {
           <Link to="/projects" className="link-style" onClick={() => handleLinkClick(true)}>
             <span>Projects</span>
           </Link>
-          {/* <Link to="/contacts" className="link-style" onClick={() => handleLinkClick(true)}>
-            <span>Contacts</span>
-          </Link> */}
-          <Link to="/resume" className="link-style" onClick={() => handleLinkClick(true)}>
-            <span>Resume</span>
-          </Link>
-          <span className="mode-toggle">
-            <WiDaySunny className="day" />
-          </span>
+          {!isMobile && (
+            <Link to="/resume" className="link-style" onClick={() => handleLinkClick(true)}>
+              <span>Resume</span>
+            </Link>
+          )}
         </div>
       </div>
       <Outlet />

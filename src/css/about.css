@@ -1,13 +1,13 @@
 .about-container {
     color: #fff;
-    padding:  2.87vh; 
-    max-width: 115.1vh; 
-    margin: auto; 
+    padding: 2.87vh;
+    max-width: 115.1vh;
+    margin: auto;
     text-align: justify;
 }
 
 .about-title {
-    font-size: 4.02;
+    font-size: 4.02vh;
     font-weight: bold;
     margin-bottom: 2.15vh;
 }
@@ -16,4 +16,23 @@
     font-size: 2.58vh;
     line-height: 1.6;
     margin-bottom: 2.87vh;
+}
+
+/* Media query for iPhone 15 Pro */
+@media screen and (max-width: 430px) {
+    .about-container {
+        padding: 2vh;
+        max-width: 90%;
+    }
+
+    .about-title {
+        font-size: 3.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    .about-content {
+        font-size: 2vh;
+        line-height: 1.4;
+        margin-bottom: 2vh;
+    }
 }
