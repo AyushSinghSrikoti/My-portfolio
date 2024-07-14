@@ -11,19 +11,19 @@ export default function Resume() {
             <p className="resume-text">
                 <strong>Education:</strong>
                 <br />
-                Maharaja Surajmal Institute of Technology,<br/> BTech in Computer Science,<br/> 2021-2025
+                Maharaja Surajmal Institute of Technology, BTech in Computer Science, 2021-2025
             </p>
             <p className="resume-text">
                 <strong>Skills:</strong>
                 <br />
-                MERN Stack, C/C++, HTML, CSS, JavaScript 
+                MERN Stack, HTML, CSS, JavaScript, C/C++
             </p>
             <p className="resume-text">
                 <strong>Experience:</strong>
                 <br />
                 Coding Ninjas, TAship, 30 August 2023 - 30 October 2023
                 <br />
-                Worked as a TA with Coding Ninjas with an overall rating of 4.8 out of 5. 
+                Worked as a TA with Coding Ninjas with an overall rating of 4.8 out of 5.
             </p>
             <p className="resume-text">
                 Feel free to download my resume using the link below to learn more about me:

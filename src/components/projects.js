@@ -9,13 +9,14 @@ export default function Project() {
             <h1 className="common-heading">Projects</h1>
             <div className="projects-container">
                 {projects.map((project, index) => (
-                    <ProjectsPreview 
-                        key={index}
-                        title={project.title}
-                        desc={project.desc}
-                        techStack={project.techStack}
-                        image={project.image}
-                    />
+                    <a key={index} href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                        <ProjectsPreview 
+                            title={project.title}
+                            desc={project.desc}
+                            techStack={project.techStack}
+                            image={project.image}
+                        />
+                    </a>
                 ))}
             </div>
         </div>
